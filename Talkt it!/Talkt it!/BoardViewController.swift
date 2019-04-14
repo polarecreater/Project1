@@ -20,13 +20,11 @@ class BoardViewController: UIViewController {
     var info3: String?
     var seem: Bool?
     var cantseem: Bool?
-    var mynamename: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         OuterView01.isHidden = true
         InnerView01.isHidden = false
-        
         //view 보이기 bool 받아옴
         if let contentBool = seem{
             OuterView01.isHidden = contentBool
@@ -34,24 +32,17 @@ class BoardViewController: UIViewController {
         if let contentBool = cantseem{
             InnerView01.isHidden = contentBool
         }
-       
         //메세지 받아옴
         if let contentString = info1{
             LanguageLabel01.text = contentString
         }
-        
         if let contentString = info2{
             WhenLabel01.text = contentString
         }
-        
         if let contentString = info3{
             WhereLabel01.text = contentString
         }
-        
     }
-    
-    
-    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
