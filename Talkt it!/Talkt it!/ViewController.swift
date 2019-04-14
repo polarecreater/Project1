@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet var studentsegment: UISegmentedControl!
     @IBOutlet var talktitView: UIView!
